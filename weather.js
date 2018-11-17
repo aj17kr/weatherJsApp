@@ -9,7 +9,7 @@ class Weather{
     async getWeather(){
         console.log("Getting data from weather API....")
         // console.log(this.query)
-        const weatherResponse = await fetch(`http://api.wunderground.com/api/${this.apiKey}/${this.query}`);
+        const weatherResponse = await fetch(`https://api.wunderground.com/api/${this.apiKey}/${this.query}`);
         const responseData=await weatherResponse.json();
         return responseData;
     }
